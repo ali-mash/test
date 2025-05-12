@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Auto Login",
+  "version": "1.0",
+  "description": "Auto-fills Facebook login with stored credentials and submits.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+    }
+  },
+  "host_permissions": [
+    "https://www.facebook.com/*"
+  ]
+}
